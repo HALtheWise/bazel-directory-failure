@@ -1,0 +1,13 @@
+load("//:rules.bzl", "custom_rule")
+
+# custom_rule(
+#     name = "old_rule",
+#     out_dir = "other",
+#     out_file = "some/file",
+# )
+
+custom_rule(
+    name = "new_rule",
+    out_dir = "some",
+    out_file = "other/file",
+)
